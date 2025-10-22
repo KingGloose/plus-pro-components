@@ -77,9 +77,9 @@
       <PlusPopover
         v-if="titleBarConfig?.columnSetting !== false"
         placement="bottom"
-        :width="columnSettingPopoverWidth"
         trigger="click"
         :title="t('plus.table.columnSettings')"
+        :popper-style="{ width: `${columnSettingPopoverWidth}` }"
       >
         <div class="plus-table-checkbox-checkAll">
           <el-checkbox
